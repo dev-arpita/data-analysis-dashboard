@@ -1,4 +1,126 @@
-html, body {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
+    background: linear-gradient(252.37deg, #BD00FF 5.28%, #00A3FF 98.3%);
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-size: 16px;
+}
+
+.nav-bar {
+    /* display: none; */
+    padding: 2.75rem;
+}
+
+.arrow-reverse {
+    margin-bottom: 2.063rem;
+}
+
+ul {
+    text-transform: uppercase;
+    list-style: none;
     padding: 0;
+    color: #fff;
+}
+
+li {
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 23.813rem;
+    height: 100vh;
+    background: url("bg.jpg");
+    /*, #221F26*/
+    background-blend-mode: screen, normal;
+    background-size: cover;
+    border-radius: 13px;
+    color: #FFFFFF;
+    margin: 1rem auto;
+}
+
+header {
+    display: flex;
+    gap: 6.75rem;
+    align-items: center;
+}
+
+.menu-bar {
+    align-self: start;
+    flex-grow: 0;
+    margin: 2rem;
+    margin-right: 0;
+}
+
+.logo {
+    color: #2D7DFF;
+    font-weight: 800;
+    line-height: 89%;
+    font-size: 1.5rem;
+    flex-grow: 2;
+    align-items: center;
+}
+
+.left-content {
+    margin-top: 6.938rem;
+    padding: 2.625rem;
+
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-weight: 275;
+    font-size: 2.125rem;
+    line-height: 111.4%;
+    color: #847D93;
+    /* margin: 0; */
+    /* margin-bottom: 4.125rem; */
+}
+
+.nav-bar {
+    background: #2C2931;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+    border: 1px solid #4D4D4D;
+    background: transparent;
+    color: inherit;
+    padding: 1rem 1.2rem;
+}
+
+button:focus {
+    border: 1px solid #2485FF;
+    outline: none;
+
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 20vw auto;
+    }
+
+    .container {
+        width: 80.188rem;
+        margin: 0 auto;
+    }
+
+    .nav-bar {
+        display: block;
+    }
 }
