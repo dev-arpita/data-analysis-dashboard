@@ -9,41 +9,46 @@
     </head>
 
     <body>
-        <div class="nav-bar">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M13 5L20 12L13 19" stroke="white" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
+        <div class="nav-bar" id="nav-bar">
+            <div class="arrow-reverse">
+                <svg id="nav-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13 5L20 12L13 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
             <ul>
-                <li>home</li>
-                <li>my state</li>
-                <li>members</li>
-                <li>settings</li>
-                <li>help</li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">my state</a></li>
+                <li><a href="#">members</a></li>
+                <li><a href="#">settings</a></li>
+                <li><a href="#">help</a></li>
 
             </ul>
         </div>
         <div class="container">
             <header>
-                <svg class="menu-bar" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                <svg class="menu-bar" id="menu-bar" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 5V2H0V5H20ZM20 11V8H0V11H20ZM20 17V14H0V17H20Z" fill="white" />
                 </svg>
                 <div class="logo">LOGO</div>
             </header>
             <div class="left-content">
-                <h1 class="title">DATA ANALYTICS</h1>
+                <h1 class="title">DATA <br /> ANALYTICS</h1>
                 <p class="subtitle">Making sense of your traffic.</p>
 
                 <button id="btn">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                         <path d="M13 5L20 12L13 19" stroke="white" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
                     GO TO MY STATS
                 </button>
+
             </div>
         </div>
         <script src="index.pack.js"></script>

@@ -14,23 +14,43 @@ body {
 }
 
 .nav-bar {
-    /* display: none; */
-    padding: 2.75rem;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 40vw;
 }
 
 .arrow-reverse {
     margin-bottom: 2.063rem;
+    display: inline-flex;
+    margin-left: 2.753rem;
+    padding-top: 2.563rem;
+    transform: scaleX(-1);
 }
+
 
 ul {
     text-transform: uppercase;
     list-style: none;
-    padding: 0;
+    padding: 0 0 1rem 0;
     color: #fff;
 }
 
-li {
-    margin-bottom: 1.5rem;
+
+a {
+    padding-left: 2.75rem;
+    display: block;
+    text-decoration: none;
+    padding: 0.875rem;
+    padding-left: 2.75rem;
+    color: inherit;
+    outline: 0;
+}
+
+a:focus {
+    background: #2D7DFF;
 }
 
 .container {
@@ -40,7 +60,6 @@ li {
     width: 23.813rem;
     height: 100vh;
     background: url("bg.jpg");
-    /*, #221F26*/
     background-blend-mode: screen, normal;
     background-size: cover;
     border-radius: 13px;
