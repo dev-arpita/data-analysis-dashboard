@@ -87,7 +87,7 @@ h1 {
 .cta:before {
     content: '';
     position: absolute;
-    background: url('arrow.svg') no-repeat;
+    background: url('/arrow.svg') no-repeat;
     width: 1.5em;
     height: 1.5em;
     left: 1.25em;
