@@ -21,7 +21,7 @@ body {
 }
 
 section {
-    background: #221F26 url('./bg.jpg');
+    background: #221F26 url('/bg.jpg');
     background-size: cover;
     background-blend-mode: screen;
     background-position: -100px;
@@ -105,6 +105,8 @@ nav {
     top: 0;
     height: 100vh;
     max-width: 300px;
+    transform: translateX(-100%);
+    transition: transform .3s;
 }
 
 nav ul {
@@ -145,4 +147,64 @@ nav ul li a:hover {
 
 .active:hover {
     background: #4497FF;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .left-col {
+        display: flex;
+    }
+
+    .content p {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    nav {
+        position: unset;
+        transform: translateX(0) !important;
+        border-radius: unset;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+        height: 100%;
+    }
+
+    .menu-btn,
+    .back-btn {
+        display: none;
+    }
+
+    ul {
+        margin-top: 4em;
+    }
+
+    header {
+        padding: 1.6em;
+    }
+
+    .container {
+        display: flex;
+        padding: 2em;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    section {
+        border-radius: unset;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+        width: 100%;
+        background-size: cover;
+        background-position: 0;
+        background-attachment: unset;
+    }
+
+    .content {
+        justify-self: left;
+        margin-left: 4em;
+    }
 }
